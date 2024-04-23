@@ -1,0 +1,18 @@
+@model Player
+<div class="card mb-3 mt-3 bg-light">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="~/img/@Model.Image" class="img-fluid rounded-start" style="height: 100%;">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">@Model.Name</h5>
+                <p class="card-text">Elo : @Model.Elo</p>
+                <p class="card-text">Nationality : @Model.Nationality</p>
+                <p class="card-text">Age : @Model.Age</p>
+                <a asp-controller="Players" asp-action="Details" asp-route-id="@Model.Id" class="btn btn-primary">Details</a>
+            </div>
+
+        </div>
+    </div>
+</div>

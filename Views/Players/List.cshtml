@@ -1,0 +1,12 @@
+@model List<Player>
+
+    @foreach(var player in @Model)
+    {
+
+        @await Html.PartialAsync("_Card",player)
+        
+
+    }
+
+
+    
